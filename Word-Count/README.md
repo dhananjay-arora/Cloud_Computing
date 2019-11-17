@@ -1,6 +1,4 @@
-# Cloud_Computing
-
-WordCount on Hadoop VM:
+# WordCount on Hadoop VM
 
 1. Install Hadoop in a virtual machine using the Hadoop VM installation instructions handout, and verify the WordCount program is working fine. 
 Look at the source code and description of the WordCount program to understand how it works:
