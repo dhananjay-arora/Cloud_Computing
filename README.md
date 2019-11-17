@@ -2,7 +2,7 @@
 
 WordCount on Hadoop VM:
 
-1.Install Hadoop in a virtual machine using the Hadoop VM installation instructions handout, and verify the WordCount program is working fine. 
+1. Install Hadoop in a virtual machine using the Hadoop VM installation instructions handout, and verify the WordCount program is working fine. 
 Look at the source code and description of the WordCount program to understand how it works:
 https://www.cloudera.com/documentation/other/tutorial/CDH5/topics/ht_wordcount1_source.html
 
@@ -11,11 +11,11 @@ https://www.cloudera.com/documentation/other/tutorial/CDH5/topics/ht_usage.html
 Note: If you get an error when compiling the WordCount class, you may need to execute the command without the “-Xlint” option.  
 For example, when compiling in a parcel installation of CDH, use:javac -cp /opt/cloudera/parcels/CDH/lib/hadoop/*:/opt/cloudera/parcels/CDH/lib/hadoop-mapreduce/* WordCount.java -d build 
 
-2.Download  the  Canterbury  Corpus  (http://corpus.canterbury.ac.nz/descriptions/) from http://corpus.canterbury.ac.nz/resources/cantrbry.zip . 
+2. Download  the  Canterbury  Corpus  (http://corpus.canterbury.ac.nz/descriptions/) from http://corpus.canterbury.ac.nz/resources/cantrbry.zip . 
 
-3.Run  WordCount  on  the  alice29.txt  input  file  and  then  on  the  asyoulik.txt  input  file.
+3. Run  WordCount  on  the  alice29.txt  input  file  and  then  on  the  asyoulik.txt  input  file.
 
-4.Save  the  last  20  lines  of  output  from  WordCount  for  each  of  the  two  input  files.  The  output  files  (each  consisting  of  the  last  20  lines  of  output)  corresponding  to  the input files alice29.txt and asyoulik.txt should be named alice20-hadoop.txt and asyoulik20-hadoop.txt respectively.
+4. Save  the  last  20  lines  of  output  from  WordCount  for  each  of  the  two  input  files.  The  output  files  (each  consisting  of  the  last  20  lines  of  output)  corresponding  to  the input files alice29.txt and asyoulik.txt should be named alice20-hadoop.txt and asyoulik20-hadoop.txt respectively.
 
 It  is  recommended  that  you  use  the  UNIX  “tail”  command  and  redirect  the  resulting output to a file to do this. 
 For example, $ hadoop fs -cat wordcount/output/* | tail –n 20  > output20.txt
@@ -35,8 +35,8 @@ Now, try on AWS EMR instance:
 1. Once you are able to log in, please modify the WordCount program so it is not case sensitive, that is, it treats all words as being lowercase. 
 Call this new program WordCountCaseInsensitive.java. You can refer to the link:https://www.cloudera.com/documentation/other/tutorial/CDH5/topics/ht_wordcount2.html
 
-2.Next  modify  WordCountCaseInsensitive.java  to  incorporate  a  combiner  function  that runs on the map output. 
+2. Next  modify  WordCountCaseInsensitive.java  to  incorporate  a  combiner  function  that runs on the map output. 
 
-3.Run  WordCountCaseInsensitive  on  the  alice29.txt  input  file  and  then  on  the  asyoulik.txt input file.
+3. Run  WordCountCaseInsensitive  on  the  alice29.txt  input  file  and  then  on  the  asyoulik.txt input file.
 
-4.Save  the  last  20  lines  of  output  from  WordCount  for  each  of  the  two  input  files.  The  output  files  (each  consisting  of  the  last  20  lines  of  output)  corresponding  to  the  input  files  alice29.txt  and  asyoulik.txt  should  be  named  alice20-hadoop-ci.txt and asyoulik20-hadoop-ci.txt respectively.
+4. Save  the  last  20  lines  of  output  from  WordCount  for  each  of  the  two  input  files.  The  output  files  (each  consisting  of  the  last  20  lines  of  output)  corresponding  to  the  input  files  alice29.txt  and  asyoulik.txt  should  be  named  alice20-hadoop-ci.txt and asyoulik20-hadoop-ci.txt respectively.
