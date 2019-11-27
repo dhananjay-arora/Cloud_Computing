@@ -5,7 +5,6 @@ The instructions are fairly straightforward
 To Run:
 ```
 spark-submit multiLinearRegression.py /path/to/input/files/on/hdfs
-spark-submit NBClassifier.py /path/to/input/files/on/hdfs
 ```
 
 Environment: AWS EMR or Cloudera Hadoop
